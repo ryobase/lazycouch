@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge, chrome=1">
+        <title>Example</title>
+        <style>
+            .contents{
+                min-height:250px;
+                margin:0 auto;
+                background:#f5f5f5;
+                color:#333;
+                padding: 50px;
+                position:relative;
+                width: 800px;
+            }
+            img {
+                position: relative;
+                max-width:100%;
+                max-height:100%;
+            }
+            .is-lazyloading{
+                width: 100%;
+                height: 100%;
+                padding-bottom: 70%;
+                position: relative;
+                background: rgb(46, 46, 46);
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner">
+            <h1>Welcome!</h1>
+        </div>
+        <br>
+        <section class="contents" id="contents" data-lazy-app>
+            <div class="">
+                <img src="https://static.pexels.com/photos/302891/pexels-photo-302891.jpeg">                    
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/302889/pexels-photo-302889.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/302892/pexels-photo-302892.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/302905/pexels-photo-302905.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/312420/pexels-photo-312420.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/302894/pexels-photo-302894.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/302895/pexels-photo-302895.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/324028/pexels-photo-324028.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/333523/pexels-photo-333523.jpeg">
+            </div>
+            <br>
+
+            <div class="">
+                <img class="is-lazyloading" data-lazy-src="https://static.pexels.com/photos/333522/pexels-photo-333522.jpeg">
+            </div>
+            <br>
+
+        </section>
+
+        <script src="dist/lazycouch.js"></script>
+        <script>
+            let lazy = new lazycouch({
+                useApp: true,
+                useClass: true
+            });
+        </script>
+    </body>
+</html>
